@@ -2,49 +2,29 @@ package id.ac.polinema.tiketbus.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import id.ac.polinema.tiketbus.R;
 
 public class BusActivity extends AppCompatActivity {
-    public String judul;
-    public String kategori;
-    public String image;
-
-
-    public BusActivity(String judul, String kategori, String image) {
-        this.judul = judul;
-        this.kategori = kategori;
-        this.image = image;
-    }
-
-    public String getJudul() {
-        return judul;
-    }
-
-    public void setJudul(String judul) {
-        this.judul = judul;
-    }
-
-    public String getKategori() {
-        return kategori;
-    }
-
-    public void setKategori(String kategori) {
-        this.kategori = kategori;
-    }
-
-    public String getImage() {
-        return image;
-    }
-
-    public void setImage(String image) {
-        this.image = image;
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bus);
+
+
+    }
+
+    public void sydney(View view) {
+        Intent intent = new Intent(this, KursiActivity.class);
+        startActivity(intent);
+    }
+
+    public void Suburjaya(View view) {
+        Intent intent = new Intent(this, KursiActivity.class);
+        startActivity(intent);
     }
 }
