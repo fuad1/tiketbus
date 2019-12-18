@@ -27,4 +27,29 @@ public class BusActivity extends AppCompatActivity {
         Intent intent = new Intent(this, KursiActivity.class);
         startActivity(intent);
     }
+
+    public void Akas(View view) {
+        Intent intent = new Intent(this, KursiActivity.class);
+        startActivity(intent);
+    }
+
+    public void HarapanJaya(View view) {
+        Intent intent = new Intent(this, KursiActivity.class);
+        startActivity(intent);
+    }
+
+    public void Haryanto(View view) {
+        Intent intent = new Intent(this, KursiActivity.class);
+        startActivity(intent);
+    }
+
+    public void LORENA(View view) {
+        Intent intent = new Intent(this, KursiActivity.class);
+        startActivity(intent);
+    }
+
+    public void KeramatJati(View view) {
+        Intent intent = new Intent(this, KursiActivity.class);
+        startActivity(intent);
+    }
 }
