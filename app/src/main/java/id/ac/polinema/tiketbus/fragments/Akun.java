@@ -1,6 +1,7 @@
 package id.ac.polinema.tiketbus.fragments;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -11,17 +12,20 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import id.ac.polinema.tiketbus.R;
+import id.ac.polinema.tiketbus.activities.BusActivity;
+import id.ac.polinema.tiketbus.activities.MainActivity;
+
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
 public class Akun  extends Fragment {
+
     EditText inuser,inpass;
     Button btnlgn;
     public Akun() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -31,6 +35,8 @@ public class Akun  extends Fragment {
         inuser  = view.findViewById(R.id.inpass);
         inpass  = view.findViewById(R.id.inpass);
         btnlgn = view.findViewById(R.id.btnlgn);
+
+
 
         btnlgn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,6 +55,7 @@ public class Akun  extends Fragment {
         });
         return view;
     }
+
 
 
 }
