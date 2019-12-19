@@ -22,4 +22,9 @@ public class CekActivity extends AppCompatActivity {
         Intent intent = new Intent(this,CekActivity.class);
         startActivity(intent);
     }
+
+    public void ts(View view) {
+        Intent intent = new Intent(this,MainActivity.class);
+        startActivity(intent);
+    }
 }

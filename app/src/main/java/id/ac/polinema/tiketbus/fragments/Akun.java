@@ -35,7 +35,6 @@ public class Akun  extends Fragment {
                 startActivity(in);
             }
         });
-
         return view;
     }
 
