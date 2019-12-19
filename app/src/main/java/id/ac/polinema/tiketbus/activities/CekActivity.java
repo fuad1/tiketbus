@@ -8,18 +8,18 @@ import android.view.View;
 
 import id.ac.polinema.tiketbus.R;
 
-public class KursiActivity extends AppCompatActivity {
+public class CekActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_kursi);
+        setContentView(R.layout.activity_cek);
 
     }
 
 
     public void tes(View view) {
-        Intent intent = new Intent(this, CekActivity.class);
+        Intent intent = new Intent(this,CekActivity.class);
         startActivity(intent);
     }
 }
